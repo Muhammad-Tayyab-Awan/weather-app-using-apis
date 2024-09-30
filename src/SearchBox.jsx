@@ -6,7 +6,7 @@ import "./Searchbox.css";
 import { useEffect, useState } from "react";
 export default function SeacrhBox({ updateWeather }) {
   let API_URL = "https://api.openweathermap.org/data/2.5/weather";
-  let API_KEY = "7d417b61cac5e546acc769cc14302218";
+  // missing is te api key
   let [city, setCity] = useState("");
   let [error, setError] = useState(false);
   let updateCity = (event) => {
