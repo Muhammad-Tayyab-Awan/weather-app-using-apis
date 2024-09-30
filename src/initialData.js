@@ -1,7 +1,6 @@
 export let getCity = async () => {
   let API_URL = "https://api.openweathermap.org/data/2.5/weather";
-  let API_KEY = "7d417b61cac5e546acc769cc14302218";
-  const request = await fetch("https://ipinfo.io/json?token=14b903f1acfa52");
+  // missing are the keys of apis
   const jsonResponse = await request.json();
   let response = await fetch(
     `${API_URL}?q=${jsonResponse.city}&appid=${API_KEY}&units=metric`
